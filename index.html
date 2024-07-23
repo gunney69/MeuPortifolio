@@ -1,0 +1,222 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Portfólio</title>
+ </head>
+ <body>
+
+    <!-- Navegation -->
+    <header class="header">
+        <a class="logo" href="#home">Gustavo <span>Matias</span></a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="menu-item">Home</a>
+            <a href="#services" class="menu-item">Services</a>
+            <a href="#about" class="menu-item">About</a>
+            <a href="#work" class="menu-item">Work</a>
+            <a href="#contact" class="menu-item">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi, It's me <span>Gustavo</span></h1>
+            <h3 class="text-animation">And I'm a <span></span></h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis molestias veniam accusamus minima. Et eveniet, maxime beatae optio hic corrupti harum?</p>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/gustavomatiassilva?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9bZmWN%2FHT8e4MSIcqLEFvA%3D%3D" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/gunney69" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="mailto:gustavomatias.dev@gmail.com" target="_blank"><i class='bx bxl-gmail' ></i></a>
+                <a href="#" target="_blank"><i class='bx bxl-instagram'></i></a>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Hire</a>
+                <a href="#contact" class="btn">Contact</a>
+            </div>
+        </div>
+
+        <div class="home-img">
+            <img src="./assets/images/foto2.jpg" alt="home image">
+        </div>
+        
+    </section>
+
+    <!-- MySerices -->
+    <section class="services" id="services">
+        <h2 class="services-title"><span>My</span> services</h2>
+        
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bx-code-block' id="service-icon" ></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolores placeat. Obcaecati, harum ducimus. Temporibus ut voluptate aliquam assumenda? Cum enim repellat deserunt</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bx-code-alt' id="service-icon"></i>
+                    <h3>Front-end Development</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolores placeat. Obcaecati, harum ducimus. Temporibus ut voluptate aliquam assumenda? Cum enim repellat deserunt,</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AboutMe -->
+    <section class="about" id="about">
+        <h2>About <span>Me</span></h2>
+
+        <div class="about-container">
+            <nav class="nav-about">
+                <ul style="list-style: none;">
+                    <li onclick="mostrarTela('displayEducation')" id="education">Education</li>
+                    <li onclick="mostrarTela('displaySkills')" id="skills">Skills</li>
+                    <li onclick="mostrarTela('displayAboutMe')" id="about-me" >About Me</li>
+                </ul>
+            </nav>
+
+            <div id="displayEducation" class="about-education display-enable display-disable " >
+                <h3>My Education</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                <div class="education-content">
+                    <div class="education-box">
+                        <h4>2021 - 2023</h4>
+                        <p class="education-box-description">Analysis and <br> systems development</p>
+                        <p class="education-box-description-grey">Online College</p>
+                    </div>
+
+                    <div class="education-box">
+                        <h4>2023 - 2024</h4>
+                        <p class="education-box-description">Front-end <br> Web Development</p>
+                        <p class="education-box-description-grey">Online Course - Udemy</p>
+                    </div>
+
+                    <div class="education-box">
+                        <h4>2024</h4>
+                        <p class="education-box-description">Python fundamentals</p>
+                        <p class="education-box-description-grey">Course - Senai</p>
+                    </div>
+
+                    <div class="education-box">
+                        <h4>2024</h4>
+                        <p class="education-box-description">Full-Stack <br> Web Development</p>
+                        <p class="education-box-description-grey">Online Course - Udemy</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div id="displaySkills" class="about-skills display-disable"> 
+                <h3>My Skills</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                <div class="icons-skills">
+                    <div class="icons-column">
+                        <i class='bx bxl-html5' title="Html5"></i>
+                        <i class='bx bxl-css3' title="Css3"></i>
+                        <i class='bx bxl-javascript' title="JavaScript"></i>
+                    </div>
+                    <div class="icons-column">
+                        <i class='bx bxl-nodejs' title="Nodejs" ></i>
+                        <i class='bx bxl-typescript' title="TypeScript"></i>
+                        <i class='bx bxl-python' title="Python"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="displayAboutMe" class="aboutMe-content display-disable ">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                
+                <div class="aboutMe-info">
+                    <div>
+                        <p><span>Name</span> Gustavo Matias Silva</p>
+                        <p><span>Nacionality</span> Brazilian</p>
+                        <p><span>Age</span> 21 years old</p>
+                    </div>
+                    <div>
+                        <p><span>Freelance</span> Available</p>
+                        <p><span>Email</span> gustavomatias.dev@gmail.com</p>
+                        <p><span>Phone</span> (+55) 11 99394 - 6135</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section class="work" id="work" style="background-color: rgba(0, 0, 0, 0.3);">
+        <h2><span>working</span> on it <span>. . .</span></h2>
+    </section>
+
+
+    <!-- ContactMe-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/gustavomatiassilva?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B9bZmWN%2FHT8e4MSIcqLEFvA%3D%3D"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/gunney69"><i class='bx bxl-github' ></i></a>
+            <a href="mailto:gustavomatias.dev@gmail.com"><i class='bx bxl-gmail' ></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#contact">FAQ</a>
+            </li>
+
+            <li>
+                <a href="#home">Home</a>
+            </li>
+
+            <li>
+                <a href="#services">Services</a>
+            </li>
+
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul> 
+
+        <p class="copyright">
+            © Gustavo Matias Silva | All Rights Reserved
+        </p>
+    </footer>
+    
+    <script src="assets/js/script.js"></script>
+ </body>
+ </html>
