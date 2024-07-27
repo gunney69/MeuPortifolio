@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-    <title>Portfólio</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <title>Gustavo M - Portfólio</title>
  </head>
  <body>
 
@@ -15,12 +15,14 @@
     <header class="header">
         <a class="logo" href="#home">Gustavo <span>Matias</span></a>
         <i class='bx bx-menu' id="menu-icon"></i>
+
+        <!-- add menu-item -->
         <nav class="navbar">
-            <a href="#home" class="menu-item">Home</a>
-            <a href="#services" class="menu-item">Services</a>
-            <a href="#about" class="menu-item">About</a>
-            <a href="#work" class="menu-item">Work</a>
-            <a href="#contact" class="menu-item">Contact</a>
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#about" >About</a>
+            <a href="#work" >Work</a>
+            <a href="#contact" >Contact</a>
         </nav>
     </header>
 
@@ -78,9 +80,9 @@
     <section class="about" id="about">
         <h2>About <span>Me</span></h2>
         <h3>My Education</h3>
-            <p>Learn a little more about my training, my skills and some important information about me!</p>
-
-
+        <p>Learn a little more about my training, my skills and some important information about me!</p>
+    
+    <!-- Menu AboutMe -->
         <div class="about-container">
             <nav class="nav-about">
                 <ul style="list-style: none;">
@@ -90,6 +92,7 @@
                 </ul>
             </nav>
 
+    <!-- Display Education -->
             <div id="displayEducation" class="about-education display-enable display-disable " >
                 
                 <div class="education-content">
@@ -119,7 +122,8 @@
                 </div>
 
             </div>
-            
+
+        <!-- Display Skill -->
             <div id="displaySkills" class="about-skills display-disable"> 
                 <div class="icons-skills">
                     <div class="icons-column">
@@ -135,6 +139,7 @@
                 </div>
             </div>
 
+        <!-- Display AboutMe -->
             <div id="displayAboutMe" class="aboutMe-content display-disable ">
                 <div class="aboutMe-info">
                     <div>

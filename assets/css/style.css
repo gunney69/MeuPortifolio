@@ -21,7 +21,7 @@ body {
     left: 0;
     display: flex;
     padding: 4rem 12% 4rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     width: 100%;
     justify-content: space-between;
@@ -44,7 +44,6 @@ body {
 }
 
 .logo span {
-    color: var(--main-color);
     text-shadow: 0 0 25px var(--main-color);
 }
 
@@ -71,6 +70,7 @@ body {
 }
 
 section {
+    min-width: 100%;
     min-height: 100vh;
     padding: 10rem 12% 10rem;
 }
@@ -435,7 +435,7 @@ margin: 3rem 0;
 }
 
 .about-skills {
-    width: 600px;
+    width: 400px;
 }
 
 .icons-skills {
@@ -594,44 +594,15 @@ textarea {
 /* ------------- Mobile ------------- */
 @media(max-width: 1285px) {
     html {
+        display: flex;
         font-size: 55%;
+        width: 100%;
     }
 
     .services-container {
         padding-bottom: 7rem;
         grid-template-columns: repeat(2,1fr);
         margin: 0 5rem;
-    }
-}
-
-@media(max-width: 991px) {
-    .header{
-        padding: 2rem 3%;
-    }
-
-    section {
-        padding: 10rem 3% 2rem;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even){
-        padding-left: 37px;
-    }
-
-    .services {
-        padding-bottom: 7rem;
-    }
-
-    .work .wrapper {
-        grid-template-columns: repeat(1,1fr);
-    }
-
-    .contact form {
-        flex-direction: column;
-    }
-
-    .footer {
-        padding: 2rem 3%;
     }
 }
 
@@ -654,7 +625,7 @@ textarea {
         display: none;
     }
 
-    .navbar .active{
+    .active{
         display: block;
     }
 
@@ -666,7 +637,6 @@ textarea {
 
     .home {
         flex-direction: column-reverse;
-        margin: 5rem 4rem;
     }
 
     .home-content h3{
@@ -693,5 +663,59 @@ textarea {
 
     .about-container {
         flex-direction: column;
+    }
+}
+
+
+@media(max-width: 991px) {
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .contact form {
+        flex-direction: column;
+    }
+
+    .footer {
+        padding: 2rem 3%;
+    }
+}
+
+@media(max-width: 822px) {
+
+    .home h1 {
+        font-size: 50px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+    .service-box {
+        width: 50vw;
+    }
+
+    .education-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+
+    .education-box {
+        width: 300px;
+    }
+
+    .aboutMe-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
     }
 }

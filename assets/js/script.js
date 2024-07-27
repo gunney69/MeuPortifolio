@@ -1,13 +1,28 @@
-const menuItens = document.querySelectorAll('.menu-item');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-menuItens.forEach(item => {
-    item.addEventListener('click', () => {
-        //Remove a classe .active de todos os itens
-        menuItens.forEach(i => i.classList.remove('active'));
-        // Adiciona a classe .active apenas ao item clicado
-        item.classList.add('active');
-    });
-});
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+
+    if(top >= offset && top < offset + height){
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+        //document.querySelector('header nav a [href*=' + id + ' ]').classList.add('active')
+      })
+    }
+  })
+}
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navbar.classList.toggle('active');
+}
 
 function mostrarTela(id) {
     // Esconde todas as telas
