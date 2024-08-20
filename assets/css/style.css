@@ -75,6 +75,11 @@ section {
     padding: 10rem 12% 10rem;
 }
 
+
+.efeito-revelar {
+    visibility: hidden;
+}
+
 .home {
     display: flex;
     align-items: center;
@@ -289,7 +294,7 @@ animation: words 8s infinite;
     min-height: 28vw;
     width: 25vw;
     border: 3px solid var(--main-color);
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
     border-radius: 20px;
     cursor: pointer;
     transition: 0.3s ease-in-out;
@@ -594,8 +599,21 @@ textarea {
 /* ------------- Mobile ------------- */
 @media(max-width: 1285px) {
     html {
+        width: 100%;
         display: flex;
         font-size: 55%;
+    }
+
+    section {
+        width: 400px;
+    }
+
+    .about > p {
+        width: 55vw;
+        margin-left: 85px;
+    }
+
+    .header {
         width: 100%;
     }
 
@@ -637,9 +655,10 @@ textarea {
 
     .home {
         flex-direction: column-reverse;
+        width: 100%;
     }
 
-    .home-content h3{
+    .home-content h3 {
         font-size: 2.6rem;
     }
 
@@ -654,7 +673,7 @@ textarea {
     }
 
     .home-img img {
-        width: 56vw;
+        width: 50vw;
     }
 
     .service-info h3 {
@@ -686,12 +705,16 @@ textarea {
 
     .footer {
         padding: 2rem 3%;
+        margin-left: 8px;
     }
 }
 
 @media(max-width: 822px) {
+    .home h1, section h2 {
+        font-size: 40px;
+    }
 
-    .home h1 {
+    h2 {
         font-size: 50px;
     }
 
@@ -699,14 +722,17 @@ textarea {
         flex-direction: column;
     }
     .service-box {
-        width: 50vw;
+        width: 72vw;
     }
 
     .education-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+    }
+
+    .about-education {
+        width: 100%;
     }
 
     .education-box {
