@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="thanks.html">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -170,7 +171,7 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="https://api.staticforms.xyz/submit" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="post" netlify>
             <div class="input-group">
                 <div class="input-box">
                     <input type="text" name="name" placeholder="Full Name" id="userName"required>
@@ -187,7 +188,7 @@
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" id="userText" required></textarea>
                 <input type="submit" value="Send Message" class="btn">
             </div>
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/tanks.html">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
             <input type="hidden" name="accessKey" value="11d56dec-bc3c-4c30-9df2-737a2d99bcab">
         </form>
     </section>
