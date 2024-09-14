@@ -383,6 +383,13 @@ margin: 3rem 0;
     display: block;
 }
 
+.about-container{
+
+    min-width: 600px;
+    min-height: 400px;
+    height: 400px;
+}
+
 .about-education {
     width: 600px;
 } 
@@ -440,7 +447,7 @@ margin: 3rem 0;
 }
 
 .about-skills {
-    width: 400px;
+    width: 600px;
 }
 
 .icons-skills {
@@ -469,6 +476,7 @@ margin: 3rem 0;
     display: flex;
     gap: 7rem;
     font-size: 1.6rem;  
+    width: 600px;
 }
 
 .aboutMe-info span {

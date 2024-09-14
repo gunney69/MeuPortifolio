@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="thanks.html">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -45,7 +44,7 @@
             </div>
 
             <div class="btn-group">
-                <a href="#" class="btn efeito-revelar">Hire</a>
+                <a href="#" class="btn efeito-revelar" id="hire">Hire</a>
                 <a href="#contact" class="btn efeito-revelar">Contact</a>
             </div>
         </div>
@@ -166,32 +165,32 @@
         <h2><span>working</span> on it <span>. . .</span></h2>
     </section>
 
-
     <!-- ContactMe-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="https://api.staticforms.xyz/submit" method="post" netlify>
+        <form action="https://api.staticforms.xyz/submit" method="post" netlify id="myForm">
             <div class="input-group">
                 <div class="input-box">
-                    <input type="text" name="name" placeholder="Full Name" id="userName"required>
+                    <input type="text" name="name" placeholder="Full Name" id="userName" required>
                     <input type="email" name="email" placeholder="Email" id="userEmail" required>
                 </div>
                 
                 <div class="input-box">
                     <input type="number" name="phone" placeholder="Phone Number" id="userNumber">
-                    <input type="text" name="subject" placeholder="Subject" id="userSubject">
+                    <input type="text" name="subject" placeholder="Subject" id="userSubject" required pattern="[a-zA-Z]+">
                 </div>
             </div>
 
-            <div class="input-group-2">
+            <div class="input-group-2"> 
                 <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" id="userText" required></textarea>
-                <input type="submit" value="Send Message" class="btn">
+                <input type="submit" value="Send Message" class="btn" id="btn-form">
             </div>
-            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thanks.html">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html#contact">
             <input type="hidden" name="accessKey" value="11d56dec-bc3c-4c30-9df2-737a2d99bcab">
         </form>
     </section>
+
     <!-- footer -->
     <footer class="footer">
         <div class="social">
